@@ -142,7 +142,27 @@ const printDelete6 = document.querySelector('#printdelete6');
 const printDelete7 = document.querySelector('#printdelete7');
 const printDelete0 = document.querySelector('#printdelete0');
 
+const resettodo = document.getElementById("resettodo");
+const alimentacion = document.getElementsByClassName("alimentacion");
 
+
+resettodo.addEventListener("click", function(event) {
+	fase1.textContent="";
+	fase2.textContent="";
+	fase3.textContent="";
+	fase4.textContent="";
+	fase5.textContent="";
+	fase6.textContent="";
+	fase7.textContent="";
+	fase1d.textContent="";
+	fase2d.textContent="";
+	fase3d.textContent="";
+	fase4d.textContent="";
+	fase5d.textContent="";
+	fase6d.textContent="";
+	fase7d.textContent="";
+
+})
 
 
 encabezado.addEventListener("keypress", function(event) {
@@ -564,4 +584,5 @@ printButton.addEventListener("click", function() {
 	removeAllChildNodes(printDelete7);
 	removeAllChildNodes(printDelete0);
 	printButton.remove();
+	resettodo.remove();
 })
